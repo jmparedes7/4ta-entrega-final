@@ -1,0 +1,54 @@
+#footer{
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer__titulos{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Concert one', cursive;
+    padding: 5px;
+    
+}
+
+.footer__wpp{
+	height: auto;
+	width: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+
+   &:hover{
+   	width: 80px
+   }
+}
+
+
+.footer__imgWpp{
+    width: 50px
+}
+
+.footer__list{
+    ul li{
+        display: inline-block;
+        padding: 10px;
+    }
+    
+    ul{
+        list-style: none;
+        list-style-position: center;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .footer__style{
+    color: #f5f3f4 ;
+    font-size: 22px;
+    font-weight: bold;}
+}

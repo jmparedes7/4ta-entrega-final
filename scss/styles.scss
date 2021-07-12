@@ -1,0 +1,51 @@
+@import "variables";
+@import "productos";
+@import "header";
+@import "main";
+@import "list";
+@import "footer";
+
+
+
+body{
+    background: linear-gradient(to bottom, #40e0d0, #ff8c00, #ff0080);
+	padding: 15px;}
+
+
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    list-style-position: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+#grillaJuegos{
+    display: grid;
+    grid-template-areas:
+    "auto" "auto" "auto"
+    "auto" "auto" "auto"
+    "auto" "auto" "auto"
+    ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: end;
+    align-content: start;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
